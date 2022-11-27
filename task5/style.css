@@ -1,0 +1,18 @@
+p,#formField, #duplicateField {
+    font-size: x-large;
+    color:rgb(114, 145, 240);
+    text-align: center;
+ 
+}
+
+#inputText{
+    font-size: large;
+    color: blueviolet;
+}
+
+button{
+    font-size: large;
+    color: white;
+    background-color:rgb(114, 145, 240);
+    border-radius: 5px;
+}

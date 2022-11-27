@@ -1,25 +1,23 @@
-const trafficLightEl = document.querySelector('#trafficLight');
+let redCircle = document.querySelector('#trafficLight');
+let yellowCircle = document.querySelector('#trafficLight2');
+let greenCircle = document.querySelector('#trafficLight3');
 
-function makeRed(){
-    trafficLightEl.style.background = ('red');
-    trafficLightEl.removeEventListener('click', makeRed);
-    trafficLightEl.addEventListener('click', makeGreen);
-}
+addEventListener('click',e => {
+   if (e.target === redCircle){
+        redCircle.style.background = 'red';
+    } else {
+        redCircle.style.background = '';
+    }
 
-trafficLightEl.addEventListener('click', makeRed);
+    if(e.target === yellowCircle){
+        yellowCircle.style.background = 'yellow';
+    } else {
+        yellowCircle.style.background = '';
+    }
 
-function makeYellow(){
-    trafficLightEl.style.background = ('yellow');
-    trafficLightEl.removeEventListener('click', makeYellow);
-    trafficLightEl.addEventListener('click', makeRed);
-}
-
-trafficLightEl.addEventListener('click', makeYellow);
-
-function makeGreen() {
-    trafficLightEl.style.background = ('green');
-    trafficLightEl.removeEventListener('click', makeGreen);
-    trafficLightEl.addEventListener('click', makeYellow);
-}
-
-trafficLightEl.addEventListener('click', makeGreen);
+   if (e.target === greenCircle) {
+     greenCircle.style.background = 'green';
+    } else {
+        greenCircle.style.background = '';
+    }
+});

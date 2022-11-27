@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(124, 124, 234);
+    color:rgb(75, 75, 100);
+}
+
+ul {
+    display: inline-block;
+}
+a,li{
+    color: black;
+    font-size: xx-large;
+    padding-bottom: 30px;
+    text-align: center;
+
+    
+}
+h1{
+    text-align: center;
+}
